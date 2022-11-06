@@ -1,6 +1,7 @@
 import pygame
 import csv
 import random
+import os
 
 questionFile = "QuestionDocument.txt"
 
@@ -11,10 +12,10 @@ green = (0, 247, 0)
 red = (255, 0, 0)
 
 '''-------------------Image Loading--------------------'''
-picture_1_1 = pygame.image.load("Nr.1-1OS.png")
-picture_1_2 = pygame.image.load("Nr.1-2OS.png")
-picture_2_1 = pygame.image.load("Nr.2-1OS.png")
-picture_2_2 = pygame.image.load("Nr.2-2OS.png")
+picture_1_1 = pygame.image.load(os.path.join('Images', 'Nr.1-1OS.png'))
+picture_1_2 = pygame.image.load(os.path.join('Images', 'Nr.1-2OS.png'))
+picture_2_1 = pygame.image.load(os.path.join('Images', 'Nr.2-1OS.png'))
+picture_2_2 = pygame.image.load(os.path.join('Images', 'Nr.2-2OS.png'))
 
 
 
