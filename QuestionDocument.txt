@@ -1,0 +1,40 @@
+1,Wie viele Weihnachtsbaeume werden in Deutschland pro Jahr verkauft?,Etwa 30 Millionen, Unter 30 Millionen
+2,Wie viele Liter Bier werden in Deutschland pro Kopf jaehrlich getrunken?,100 Liter Bier,50 Liter Bier
+3,Wie viele Buchstaben hat das hawaiianische Alphabet?,12,24
+4,Wie viele Buchstaben hat das japanische Hiragana Alphabet?,48,52
+5,Wie viele Buchstaben hat das japanische Katakana Alphabet?,48,52
+6,Wie viele Einkerbungen hat ein Golfball?,336,284
+7,Wer war waehrend des 2. Weltkriegs US-Praesident?,Roosevelt,Truman
+8,Was bezeichnet die chemische Formel 'C6 H12 O6'?,Glucose,Gluten
+9,Welche Wurzeln hat Donald Trump?,Deutsche,Englische
+10,Wie heissen die 4 Basen der DNA?,"Adenin, Cytosin, Guanin, Thymin","Adenin, Cytosin, Guanin, Uracil"
+11,Welcher ist der 'rote Planet' unseres Sonnensystems?,Der Mars,Die Venus
+12,Wie heisst die Hauptstadt von Burkina Faso?,Ouagadougou,Bamako
+13,"Wie heisst die Region Frankreichs, in der die Zuege rechts fahren?","Elsass- Lothringen",Es gibt keine
+14,Welches Land ist flaechenmaessig das zweitgroesste der Erde?,Kanada,USA
+15,Welcher ist der laengste Fluss der Welt?,Amazonas,Donau
+16,Welches ist die groesste Stadt der Welt?,Mexico- Stadt,New York
+17,Wie heisst die Hauptstadt von Brasilien?,Brasilia,Rio de Janeiro
+18,In welcher Stadt wurden die Olympischen Spiele 2000 ausgetragen?,Sydney,Tokyo
+19,Welches ist das einzige Bundesland ohne Kreisfreie Stadt?,Saarland,Bayern
+20,Aus wie vielen Kraeuter ist Jaegermeister gemacht?,Aus 56,Aus 48
+21,Wie viele Knochen hat ein Erwachsener Mensch?,Ueber 200, Unter 200
+22,Wie viele Tasten hat ein Klavier?,88,72
+23,Wie heisst das Element Gold auf Latein?,Aurum,Argentum
+24,Welcher ehemalige US-Praesident war frueher Schauspieler?,Ronald Reagen,Donald Trump
+25,"Was bezeichnen die Namen 'Executive, Legislative, Judikative'?",Die Gewaltenteilung in einer Demokratie,Aemter aus dem alten Rom
+26,Wen beten Buddhisten an?,Niemanden,Buddha
+27,Wie viele Nieren hat ein Mensch,2,1
+28,Wie viele Planeten hat unser Sonnensystem?,8 (Pluto ist kein Planet),9 (Pluto ist ein Planet)
+29,Nach welcher Zeit feiert man die 'Petersilienhochzeit'?,Nach 12,5 Jahren,Nie
+30,In welchem Jahr wurde der Euro eingefuehrt?,2002,2000
+31,Was wird durch Antibiotika bekaempft?,Bakterienerkrankungen,Virusinfektionen
+32,Woraus besteht ein Diamant?,Kohlenstoff,Erz
+33,Welcher Buchstabe kommt nicht im Periodensystem vor?,J,K
+34,Das flaechenmaessig kleinste Bundesland heißt?,Bremen,Berlin
+35,Was bedeutet das lateinische 'carpe diem'?,Nutze den Tag,Geniesse das Leben
+36,Einen Feinschmecker nennt man auch?,Gourmet,Gourmed
+37,Welche Insel gehoert nicht zu den Balearischen Inseln?,Gran Canaria,Formentera
+38,Wie groß ist der Erdumpfang am Aequator?,Rund 40.070 km,Rund 42.300 km
+39,Mit welcher Tiergruppe sind die Dinosaurier am engsten verwandt?,Voegeln,Eidechsen
+40,Welches Metall leitet Waerme am besten?,Silber,Aluminium
