@@ -197,7 +197,6 @@ def rightQuestion(n):
 
 def text(count, answer1, answer2, question):
     global outputScore, outputSkip, outputAnswer1, outputAnswer2, outputQuestion
-    #textScore, textSkip, textAnswer1, textAnswer2, textQuestion, font2
 
     textScore = count
     textSkip = "Skip"
@@ -213,10 +212,6 @@ def text(count, answer1, answer2, question):
     outputAnswer1 = font2.render(textAnswer1, True, black)
     outputAnswer2 = font2.render(textAnswer2, True, black)
     outputQuestion = font2.render(textQuestion, True, black)
-
-#    while outputQuestion.get_width() > sizetoborder:
-#        size -= 1
-#        outputQuestion = font2.render(textQuestion, True, black)
 
 def variables(screenWidth, screenHeight):
     global xQ, yQ, widthQ, heightQ, xA_1, yA_1, widthA_1, heightA_1, xA_2, xC, yC, widthC, heightC, xS, size, sizeToBorder
