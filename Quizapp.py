@@ -10,14 +10,15 @@ black = (0, 0, 0)
 yellow = (255, 255, 0)
 green = (0, 247, 0)
 red = (255, 0, 0)
+white = (255, 255, 255)
 
 
 '''-------------------Image Loading--------------------'''
-picture_1_1 = pygame.image.load(os.path.join('Images', 'Nr.1-1OS.png'))
-picture_1_2 = pygame.image.load(os.path.join('Images', 'Nr.1-2OS.png'))
-picture_2_1 = pygame.image.load(os.path.join('Images', 'Nr.2-1OS.png'))
-picture_2_2 = pygame.image.load(os.path.join('Images', 'Nr.2-2OS.png'))
-picture_background = pygame.image.load(os.path.join('Images', 'StarSky.png'))
+picture_1_1 = pygame.image.load(os.path.join('Images', 'pp1.jpg'))
+picture_1_2 = pygame.image.load(os.path.join('Images', 'pp2.jpg.'))
+picture_2_1 = pygame.image.load(os.path.join('Images', 'pp3.jpg'))
+picture_2_2 = pygame.image.load(os.path.join('Images', 'pp2.jpg'))
+picture_background = pygame.image.load(os.path.join('Images', 'background.jpg'))
 
 
 '''-------------------Class--------------------'''
@@ -48,15 +49,29 @@ class button():
 '''--------------------Functions--------------------'''
 def buttons():
     global questionButton, answer1Button, answer2Button, scoreButton, skipButton
-    questionButton =button(black, xQ, yQ, widthQ, heightQ)
-    answer1Button = button(black, xA_1, yA_1, widthA_1, heightA_1)
-    answer2Button = button(black, xA_2, yA_1, widthA_1, heightA_1)
-    scoreButton = button(black, xC, yC, widthC, heightC)
-    skipButton = button(black, xS, yC, widthC, heightC)
+    questionButton =button(white, xQ, yQ, widthQ, heightQ)
+    answer1Button = button(white, xA_1, yA_1, widthA_1, heightA_1)
+    answer2Button = button(white, xA_2, yA_1, widthA_1, heightA_1)
+    scoreButton = button(white, xC, yC, widthC, heightC)
+    skipButton = button(white, xS, yC, widthC, heightC)
 
 def find_Question():
+    def alreadyDoneQuestions(qIndex):
+        if questionArray.__len__() == 0:
+            return True
+        else:
+            for i in questionArray:
+                if i == index:
+                    return False
+            return True    
+
     global direction
-    index = random.randint(1,40)
+    questionArray = []
+    mikroRun = True
+    while(mikroRun):
+        index = random.randint(1,40)
+        if alreadyDoneQuestions:
+            mikroRun = False
     direction = random.randint(1,2)
     with open(questionFile, "r") as file:
         fieldname = ["Number", "Question", "TrueAnswer", "WrongAnswer"]
@@ -98,11 +113,11 @@ def question_Finished(accuracy):
         method()
 
 def redraw_StartWindow(number):
-    TextSButton.draw(screen, black)
-    answer1SButton.draw(screen, black)
-    answer2SButton.draw(screen, black)
-    answer3SButton.draw(screen, black)
-    answer4SButton.draw(screen, black)
+    TextSButton.draw(screen, white)
+    answer1SButton.draw(screen, white)
+    answer2SButton.draw(screen, white)
+    answer3SButton.draw(screen, white)
+    answer4SButton.draw(screen, white)
     screen.fill(black)
     screen.blit(textB, (0,0))
     if number == 1:
@@ -137,11 +152,11 @@ def redraw_StartWindow(number):
     screen.blit(outputA4, (answer4SButton.x + (answer4SButton.width/2 - outputA4.get_width()/2), answer4SButton.y + (answer4SButton.height/2 - outputA4.get_height()/2)))
 
 def redraw_Window(turn):
-    questionButton.draw(win, black)
-    answer1Button.draw(win, black)
-    answer2Button.draw(win, black)
-    scoreButton.draw(win, black)
-    skipButton.draw(win, black)
+    questionButton.draw(win, white)
+    answer1Button.draw(win, white)
+    answer2Button.draw(win, white)
+    scoreButton.draw(win, white)
+    skipButton.draw(win, white)
     win.blit(bg, (0,0))
     win.blit(pic_Score, (xC,yC))
     win.blit(pic_Question, (xQ,yQ))
@@ -181,7 +196,14 @@ def rightQuestion(n):
         win.blit(bg, (0,0))
         win.blit(outputting, (screenWidth/2 - outputting.get_width()/2, screenHeight/2 - outputting.get_height()/2))
 
-    font = pygame.font.SysFont('consolas', 50)
+    if screenSizeStore == 1:
+        font = pygame.font.SysFont('times new roman', 50)
+    elif screenSizeStore == 2:
+        font = pygame.font.SysFont('times new roman', 70)
+    elif screenSizeStore == 3:
+        font = pygame.font.SysFont('times new roman', 90)
+    else: #screenSizeStore = 4
+        font = pygame.font.SysFont('times new roman', 110)
     outputting = font.render(outprint, True, outPrintColor)
 
     wait = True
@@ -205,14 +227,20 @@ def text(count, answer1, answer2, question):
     textAnswer2 = answer2
     textQuestion = question
 
-    #sizetoborder = (14/52)*screenWidth
-    font2 = pygame.font.SysFont('consolas', 17)
+    if screenSizeStore == 1:
+        font2 = pygame.font.SysFont('times new roman', 20)
+    elif screenSizeStore == 2:
+        font2 = pygame.font.SysFont('times new roman', 22)
+    elif screenSizeStore == 3:
+        font2 = pygame.font.SysFont('times new roman', 28)
+    else: #screenSizeStore = 4
+        font2 = pygame.font.SysFont('times new roman', 40)
 
-    outputScore = font2.render(textScore, True, black)
-    outputSkip = font2.render(textSkip, True, black)
-    outputAnswer1 = font2.render(textAnswer1, True, black)
-    outputAnswer2 = font2.render(textAnswer2, True, black)
-    outputQuestion = font2.render(textQuestion, True, black)
+    outputScore = font2.render(textScore, True, white)
+    outputSkip = font2.render(textSkip, True, white)
+    outputAnswer1 = font2.render(textAnswer1, True, white)
+    outputAnswer2 = font2.render(textAnswer2, True, white)
+    outputQuestion = font2.render(textQuestion, True, white)
 
 def variables(screenWidth, screenHeight):
     global xQ, yQ, widthQ, heightQ, xA_1, yA_1, widthA_1, heightA_1, xA_2, xC, yC, widthC, heightC, xS, size, sizeToBorder
@@ -242,11 +270,11 @@ pygame.display.set_caption("Scale mesurement")
 running = True
 screen.fill((255, 0, 0))
 
-TextSButton = button(black, 0, 0, 300, 90)
-answer1SButton = button(black, 0, 100, 300, 90)
-answer2SButton = button(black, 0, 200, 300, 90)
-answer3SButton = button(black, 0, 300, 300, 90)
-answer4SButton = button(black, 0, 400, 300, 90)
+TextSButton = button(white, 0, 0, 300, 90)
+answer1SButton = button(white, 0, 100, 300, 90)
+answer2SButton = button(white, 0, 200, 300, 90)
+answer3SButton = button(white, 0, 300, 300, 90)
+answer4SButton = button(white, 0, 400, 300, 90)
 
 textSB = 'Pick a screen resolution:'
 textA1 = '480p'
@@ -262,13 +290,15 @@ image2_2 = pygame.transform.scale(picture_1_1, (300,90))
 
 selectedImage = pygame.transform.scale(picture_1_2, (300,90))
 
-font = pygame.font.SysFont('consolas', 17)
+font = pygame.font.SysFont('times new roman', 20)
 
-outputSB = font.render(textSB, True, black)
-outputA1 = font.render(textA1, True, black)
-outputA2 = font.render(textA2, True, black)
-outputA3 = font.render(textA3, True, black)
-outputA4 = font.render(textA4, True, black)
+outputSB = font.render(textSB, True, white)
+outputA1 = font.render(textA1, True, white)
+outputA2 = font.render(textA2, True, white)
+outputA3 = font.render(textA3, True, white)
+outputA4 = font.render(textA4, True, white)
+
+screenSizeStore = 0
 
 redraw_StartWindow(0)
 while running:
@@ -287,18 +317,22 @@ while running:
             if answer1SButton.is_Over(pos):
                 screenWidth = 640
                 screenHeight = 480
+                screenSizeStore = 1
                 running = False
             if answer2SButton.is_Over(pos):
                 screenWidth = 800
                 screenHeight = 500
+                screenSizeStore = 2
                 running = False
             if answer3SButton.is_Over(pos):
                 screenWidth = 1280
                 screenHeight = 720
+                screenSizeStore = 3
                 running = False
             if answer4SButton.is_Over(pos):
                 screenWidth = 1920
                 screenHeight = 1080
+                screenSizeStore = 4
                 running = False
 
         if event.type == pygame.MOUSEMOTION:
@@ -335,8 +369,8 @@ find_Question()
 buttons()
 text(count, answer1, answer2, question)
 
-pic_Score = pygame.transform.scale(picture_1_1, (widthC,heightC))
-pic_Skip = pygame.transform.scale(picture_2_1, (widthC,heightC))
+pic_Score = pygame.transform.scale(picture_2_1, (widthC,heightC))
+pic_Skip = pygame.transform.scale(picture_1_1, (widthC,heightC))
 pic_Answer1 = pygame.transform.scale(picture_1_1, (widthA_1,heightA_1))
 pic_Answer2 = pygame.transform.scale(picture_1_1, (widthA_1,heightA_1))
 pic_Question = pygame.transform.scale(picture_2_1, (widthQ,heightQ))
