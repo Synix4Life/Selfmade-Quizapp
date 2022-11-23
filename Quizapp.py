@@ -11,6 +11,7 @@ yellow = (255, 255, 0)
 green = (0, 247, 0)
 red = (255, 0, 0)
 
+
 '''-------------------Image Loading--------------------'''
 picture_1_1 = pygame.image.load(os.path.join('Images', 'Nr.1-1OS.png'))
 picture_1_2 = pygame.image.load(os.path.join('Images', 'Nr.1-2OS.png'))
