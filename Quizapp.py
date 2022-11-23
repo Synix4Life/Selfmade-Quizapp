@@ -18,6 +18,7 @@ picture_1_2 = pygame.image.load(os.path.join('Images', 'Nr.1-2OS.png'))
 picture_2_1 = pygame.image.load(os.path.join('Images', 'Nr.2-1OS.png'))
 picture_2_2 = pygame.image.load(os.path.join('Images', 'Nr.2-2OS.png'))
 picture_background = pygame.image.load(os.path.join('Images', 'StarSky.png'))
+picture_background = pygame.image.load(os.path.join('Images', 'StarSky.png'))
 
 
 
