@@ -18,8 +18,6 @@ picture_1_2 = pygame.image.load(os.path.join('Images', 'Nr.1-2OS.png'))
 picture_2_1 = pygame.image.load(os.path.join('Images', 'Nr.2-1OS.png'))
 picture_2_2 = pygame.image.load(os.path.join('Images', 'Nr.2-2OS.png'))
 picture_background = pygame.image.load(os.path.join('Images', 'StarSky.png'))
-picture_background = pygame.image.load(os.path.join('Images', 'StarSky.png'))
-
 
 
 '''-------------------Class--------------------'''
@@ -266,7 +264,7 @@ selectedImage = pygame.transform.scale(picture_1_2, (300,90))
 
 font = pygame.font.SysFont('consolas', 17)
 
-outputSB = font.render(textSB, True, red)
+outputSB = font.render(textSB, True, black)
 outputA1 = font.render(textA1, True, black)
 outputA2 = font.render(textA2, True, black)
 outputA3 = font.render(textA3, True, black)

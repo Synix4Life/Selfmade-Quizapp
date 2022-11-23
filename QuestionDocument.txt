@@ -31,10 +31,10 @@
 31,Was wird durch Antibiotika bekaempft?,Bakterienerkrankungen,Virusinfektionen
 32,Woraus besteht ein Diamant?,Kohlenstoff,Erz
 33,Welcher Buchstabe kommt nicht im Periodensystem vor?,J,K
-34,Das flaechenmaessig kleinste Bundesland heißt?,Bremen,Berlin
+34,Das flaechenmaessig kleinste Bundesland heisst?,Bremen,Berlin
 35,Was bedeutet das lateinische 'carpe diem'?,Nutze den Tag,Geniesse das Leben
 36,Einen Feinschmecker nennt man auch?,Gourmet,Gourmed
 37,Welche Insel gehoert nicht zu den Balearischen Inseln?,Gran Canaria,Formentera
-38,Wie groß ist der Erdumpfang am Aequator?,Rund 40.070 km,Rund 42.300 km
+38,Wie gross ist der Erdumpfang am Aequator?,Rund 40.070 km,Rund 42.300 km
 39,Mit welcher Tiergruppe sind die Dinosaurier am engsten verwandt?,Voegeln,Eidechsen
 40,Welches Metall leitet Waerme am besten?,Silber,Aluminium
