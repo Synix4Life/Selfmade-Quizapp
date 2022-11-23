@@ -1,6 +1,8 @@
 # Selfmade-Quizapp
 
-A small self made Quizapp in Python, just for fun
+*A small self made Quizapp in Python, just for fun, visualized via pygame*
+
+If you want to try it, just pull the files down and *make sure* you have all the imports installed via pip, _especially pygame_!
 
 The Question Database is rather small, but I will expand it or change it to a bigger online database sometimes in the future...
 
